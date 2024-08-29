@@ -1,5 +1,5 @@
-from terra_sdk.client.lcd import LCDClient, PaginationOptions
-from terra_sdk.exceptions import LCDResponseError
+from sdk.client.lcd import LCDClient, PaginationOptions
+from sdk.exceptions import LCDResponseError
 
 terra = LCDClient(
     url="https://pisco-lcd.terra.dev/",

@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "terra-sdk"
-authors = ["Terraform Labs, PTE. <engineering@terra.money>"]
+name = "sdk"
+authors = ["X"]
 classifiers = [
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
@@ -9,16 +9,13 @@ classifiers = [
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10"
+    "Programming Language :: Python :: 3.10",
 ]
-description = "DEPRECATED Python SDK for Terra (check README for alternatives)"
-documentation = "https://terra-money.github.io/terra.py/index.html"
-homepage = "https://github.com/terra-money/terra.py"
-keywords = ["jigu", "blockchain", "terra", "defi", "crypto"]
+description = ""
+keywords = ["jigu", "blockchain", "defi", "crypto"]
 license = "MIT"
-packages = [{ include = "terra_sdk" }]
+packages = [{ include = "sdk" }]
 readme = "README.md"
-repository = "https://github.com/terra-money/terra.py"
 version = "4.0.0"
 
 [tool.poetry.dependencies]

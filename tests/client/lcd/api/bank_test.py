@@ -1,5 +1,5 @@
-from terra_sdk.client.lcd import LCDClient
-from terra_sdk.client.lcd.params import PaginationOptions
+from sdk.client.lcd import LCDClient
+from sdk.client.lcd.params import PaginationOptions
 
 terra = LCDClient(
     url="https://pisco-lcd.terra.dev/",

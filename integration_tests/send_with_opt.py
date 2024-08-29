@@ -2,11 +2,11 @@ import asyncio
 import base64
 from pathlib import Path
 
-from terra_sdk.client.lcd.api.tx import BroadcastOptions
-from terra_sdk.client.localterra import LocalTerra
-from terra_sdk.core import Coins
-from terra_sdk.core.bank import MsgSend
-from terra_sdk.util.contract import get_code_id
+from sdk.client.lcd.api.tx import BroadcastOptions
+from sdk.client.localterra import LocalTerra
+from sdk.core import Coins
+from sdk.core.bank import MsgSend
+from sdk.util.contract import get_code_id
 
 
 def main():

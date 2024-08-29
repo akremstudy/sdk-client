@@ -1,8 +1,8 @@
 import re
 
-from terra_sdk.client.lcd import LCDClient
-from terra_sdk.client.lcd.params import PaginationOptions
-from terra_sdk.key.mnemonic import MnemonicKey
+from sdk.client.lcd import LCDClient
+from sdk.client.lcd.params import PaginationOptions
+from sdk.key.mnemonic import MnemonicKey
 
 terra = LCDClient(
     url="https://pisco-lcd.terra.dev/",

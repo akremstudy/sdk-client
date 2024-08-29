@@ -1,4 +1,4 @@
-from terra_sdk.client.lcd import LCDClient
+from sdk.client.lcd import LCDClient
 
 terra = LCDClient(
     chain_id="pisco-1",

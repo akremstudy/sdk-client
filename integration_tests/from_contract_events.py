@@ -1,5 +1,5 @@
-from terra_sdk.client.lcd import LCDClient
-from terra_sdk.util.contract import get_contract_events
+from sdk.client.lcd import LCDClient
+from sdk.util.contract import get_contract_events
 
 tequila = LCDClient(url="https://pisco-lcd.terra.dev", chain_id="pisco-1")
 tx_info = tequila.tx.tx_info(

@@ -1,11 +1,11 @@
 import base64
 
-from terra_sdk.client.lcd.api.tx import CreateTxOptions, SignerOptions
-from terra_sdk.client.lcd.lcdclient import LCDClient
-from terra_sdk.core import Coins, SignDoc
-from terra_sdk.core.bank import MsgSend
-from terra_sdk.core.fee import Fee
-from terra_sdk.key.mnemonic import MnemonicKey
+from sdk.client.lcd.api.tx import CreateTxOptions, SignerOptions
+from sdk.client.lcd.lcdclient import LCDClient
+from sdk.core import Coins, SignDoc
+from sdk.core.bank import MsgSend
+from sdk.core.fee import Fee
+from sdk.key.mnemonic import MnemonicKey
 
 
 def test_derivation():

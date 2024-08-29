@@ -2,12 +2,12 @@ import asyncio
 
 import requests
 
-from terra_sdk.client.lcd import AsyncLCDClient
-from terra_sdk.core import Coins
-from terra_sdk.core.public_key import SimplePublicKey, ValConsPubKey
-from terra_sdk.core.tx import TxInfo
-from terra_sdk.key.key import Key
-from terra_sdk.util import hash
+from sdk.client.lcd import AsyncLCDClient
+from sdk.core import Coins
+from sdk.core.public_key import SimplePublicKey, ValConsPubKey
+from sdk.core.tx import TxInfo
+from sdk.key.key import Key
+from sdk.util import hash
 
 light_clinet_address = "https://pisco-lcd.terra.dev"
 chain_id = "pisco-1"

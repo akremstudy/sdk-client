@@ -1,39 +1,8 @@
-# DEPRECATED 
-
-Terra SDK python library will not be maintained any further by TFL officialy. Alternative options to this library can be found here:
-
-- GoLang [Terra Core](https://github.com/terra-money/core) to interact with Terra's Blockchain throught the gRPC models,
-- JavaScript [@terra-money/terra.proto](https://www.npmjs.com/package/@terra-money/feather.js) for web frontend and node backend,
-- Rust [terra-proto-rs](https://crates.io/crates/terra-proto-rs) both for smart contracts and for external APIs.
-
-<br/>
-<br/>
-
-<div  align="center"> <p > <img src="https://raw.githubusercontent.com/terra-money/terra-sdk-python/main/docs/img/logo.png" width=500 alt="py-sdk-logo"></p>
-
-The Python SDK for Terra
-<br/>
-
-<p><sub>(Unfamiliar with Terra?  <a href="https://docs.terra.money/">Check out the Terra Docs</a>)</sub></p>
-
-  <p > <img alt="GitHub" src="https://img.shields.io/github/license/terra-money/terra-sdk-python">
-<img alt="Python" src="https://img.shields.io/pypi/pyversions/terra-sdk">
-  <img alt="pip" src="https://img.shields.io/pypi/v/terra-sdk"></p>
-<p>
-  <a href="https://terra-money.github.io/terra.py/index.html"><strong>Explore the Docs »</strong></a>
-<br/>
-  <a href="https://pypi.org/project/terra-sdk/">PyPI Package</a>
-  ·
-  <a href="https://github.com/terra-money/terra.py">GitHub Repository</a>
-</p></div>
-
-The Terra Software Development Kit (SDK) in Python is a simple library toolkit for building software that can interact with the Terra blockchain and provides simple abstractions over core data structures, serialization, key management, and API request generation.
-
 ## Features
 
 - Written in Python with extensive support libraries
 - Versatile support for key management solutions
-- Exposes the Terra API through LCDClient
+- Exposes a Cosmos-sdk chain API through LCDClient
 
 <br/>
 
@@ -81,7 +50,7 @@ Terra SDK requires <a href="https://www.python.org/downloads/">Python v3.7+</a>.
 Terra SDK can be installed (preferably in a `virtual environment` from PyPI using `pip`) as follows:
   
 ```
-$ pip install -U terra_sdk
+pip install -U terra_sdk
 ```
 
 <sub>_You might have `pip3` installed instead of `pip`; proceed according to your own setup._<sub>
@@ -93,8 +62,8 @@ $ pip install -U terra_sdk
 Terra SDK uses <a href="https://python-poetry.org/">Poetry</a> to manage dependencies. To get set up with all the required dependencies, run:
 
 ```
-$ pip install poetry
-$ poetry install
+pip install poetry
+poetry install
 ```
 
 ## Tests
@@ -102,7 +71,7 @@ $ poetry install
 Terra SDK provides extensive tests for data classes and functions. To run them, after the steps in [Dependencies](#dependencies):
 
 ```
-$ make test
+make test
 ```
 
 ## Code Quality
@@ -110,7 +79,7 @@ $ make test
 Terra SDK uses <a href="https://black.readthedocs.io/en/stable/">Black</a>, <a href="https://isort.readthedocs.io/en/latest/">isort</a>, and <a href="https://mypy.readthedocs.io/en/stable/index.html">Mypy</a> for checking code quality and maintaining style. To reformat, after the steps in [Dependencies](#dependencies):
 
 ```
-$ make qa && make format
+make qa && make format
 ```
 
 <br/>
@@ -142,7 +111,7 @@ Once properly configured, the `LCDClient` instance will allow you to interact wi
 If you want to make asynchronous, non-blocking LCD requests, you can use AsyncLCDClient. The interface is similar to LCDClient, except the module and wallet API functions must be awaited.
 
 <pre><code>
->>> import asyncio 
+>>> import asyncio
 >>> from terra_sdk.client.lcd import AsyncLCDClient
 
 >>> async def main():
@@ -165,7 +134,7 @@ A `Wallet` allows you to create and sign a transaction in a single step by autom
 
 Use `LCDClient.wallet()` to create a Wallet from any Key instance. The Key provided should correspond to the account you intend to sign the transaction with.
   
-<sub>**NOTE:** *If you are using MacOS and got an exception 'bad key length' from MnemonicKey, please check your python implementation. if `python3 -c "import ssl; print(ssl.OPENSSL_VERSION)"` returns LibreSSL 2.8.3, you need to reinstall python via pyenv or homebrew.*</sub>
+<sub>**NOTE:** _If you are using MacOS and got an exception 'bad key length' from MnemonicKey, please check your python implementation. if `python3 -c "import ssl; print(ssl.OPENSSL_VERSION)"` returns LibreSSL 2.8.3, you need to reinstall python via pyenv or homebrew._</sub>
 
 ```
 >>> from terra_sdk.client.lcd import LCDClient
@@ -236,7 +205,7 @@ If you wish to request the addition of a feature, please first check out the <a 
 If you wish to contribute to the repository in the form of patches, improvements, new features, etc., first scale the contribution. If it is a major development, like implementing a feature, it is recommended that you consult with the developers of the project before starting the development to avoid duplicating efforts. Once confirmed, you are welcome to submit your pull request.
 </br>
 
-### For new contributors, here is a quick guide:
+### For new contributors, here is a quick guide
 
 1. Fork the repository.
 2. Build the project using the [Dependencies](#dependencies) and [Tests](#tests) steps.
@@ -273,12 +242,3 @@ You can give this <a href="https://opensource.guide/how-to-contribute/#how-to-su
 This software is licensed under the MIT license. See [LICENSE](./LICENSE) for full disclosure.
 
 © 2021 Terraform Labs, PTE.
-
-<hr/>
-
-<p>&nbsp;</p>
-<p align="center">
-    <a href="https://terra.money/"><img src="https://assets.website-files.com/611153e7af981472d8da199c/61794f2b6b1c7a1cb9444489_symbol-terra-blue.svg" alt="Terra-logo" width=200/></a>
-<div align="center">
-  <sub><em>Powering the innovation of money.</em></sub>
-</div>

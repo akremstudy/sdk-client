@@ -1,5 +1,5 @@
-from terra_sdk.client.lcd import LCDClient, PaginationOptions
-from terra_sdk.client.lcd.api.gov import ProposalStatus
+from sdk.client.lcd import LCDClient, PaginationOptions
+from sdk.client.lcd.api.gov import ProposalStatus
 
 terra = LCDClient(
     url="https://pisco-lcd.terra.dev/",

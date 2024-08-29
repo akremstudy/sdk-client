@@ -1,7 +1,7 @@
 import pytest
 
-from terra_sdk.client.lcd import LCDClient
-from terra_sdk.exceptions import LCDResponseError
+from sdk.client.lcd import LCDClient
+from sdk.exceptions import LCDResponseError
 
 terra = LCDClient(
     url="https://pisco-lcd.terra.dev/",

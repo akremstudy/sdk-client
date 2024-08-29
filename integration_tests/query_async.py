@@ -4,10 +4,10 @@ from pathlib import Path
 
 import uvloop
 
-from terra_sdk.client.lcd import AsyncLCDClient
-from terra_sdk.core import Coins
-from terra_sdk.core.bank import MsgSend
-from terra_sdk.util.contract import get_code_id
+from sdk.client.lcd import AsyncLCDClient
+from sdk.core import Coins
+from sdk.core.bank import MsgSend
+from sdk.util.contract import get_code_id
 
 
 async def main():

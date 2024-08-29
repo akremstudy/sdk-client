@@ -1,9 +1,9 @@
 import base64
 
-from terra_sdk.client.lcd import LCDClient
-from terra_sdk.client.lcd.api.tx import CreateTxOptions
-from terra_sdk.core import Coin, Coins
-from terra_sdk.core.staking import (
+from sdk.client.lcd import LCDClient
+from sdk.client.lcd.api.tx import CreateTxOptions
+from sdk.core import Coin, Coins
+from sdk.core.staking import (
     CommissionRates,
     Description,
     MsgBeginRedelegate,
@@ -12,7 +12,7 @@ from terra_sdk.core.staking import (
     MsgEditValidator,
     MsgUndelegate,
 )
-from terra_sdk.key.mnemonic import MnemonicKey
+from sdk.key.mnemonic import MnemonicKey
 
 
 def main():

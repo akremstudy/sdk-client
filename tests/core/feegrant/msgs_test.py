@@ -1,4 +1,4 @@
-from terra_sdk.core.feegrant import MsgGrantAllowance, MsgRevokeAllowance
+from sdk.core.feegrant import MsgGrantAllowance, MsgRevokeAllowance
 
 
 def test_deserializes_msg_grant_allowance_examples():
